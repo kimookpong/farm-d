@@ -18,9 +18,9 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   const session = await getServerSession(authOptions);
 
-  if (!session) {
-    redirect("/api/auth/signin");
-  }
+  // if (!session) {
+  //   redirect("/api/auth/signin");
+  // }
 
   return (
     <html lang="en" className="dark">
